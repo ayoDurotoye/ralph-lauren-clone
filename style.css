@@ -10,6 +10,7 @@ nav{
     z-index: 999;
     height: 65px;
     line-height: 40px;
+    background-color: #fff;
 }
 
 nav .wrapper{
@@ -49,7 +50,7 @@ nav .wrapper{
 
 .mega-box{
     position: absolute;
-    top: 80px;
+    top: 64%;
     background-color: #fff;
     /* background: blue; */
     width: 100%;
@@ -155,22 +156,32 @@ nav .wrapper{
 }
 
 .form-signin {
-    /* max-width: 400px; */
-    /* margin: 0 auto; */
     position: absolute;
     font-size: 12px;
     right: 0;
+    top: 62%;
     width: 280px;
     padding: 30px 20px;
     height: fit-content;
-    /* background-color: #767676; */
+    background-color: #ffff;
+    display: none;
 
   }
-  .form-signin input[type="email"],
-  .form-signin input[type="password"] {
+
+.iconwrapper:hover .form-signin{
+    display: block;
+}
+
+  .detailswrapper input{
+    padding-left: 5px;
     margin-bottom: 10px;
+    width: 100%;
   }
- 
+  
+ .detailswrapper input:focus::-webkit-input-placeholder {
+    font-size: 7px;
+
+ }
 
   .form-signin .checkbox {
     margin-top: 10px;
@@ -246,6 +257,14 @@ nav .wrapper{
     transform: translate(120px, -80%);
     font-weight: bold;
   }
+  .titlewrapper p{
+    font-size: 20px;
+  }
 
+  .titlewrapper{
+    display: flex;
+    justify-content: space-between;
+
+  }
 
 
