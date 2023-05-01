@@ -62,7 +62,7 @@ nav .wrapper{
 
 .content .row{
     width: calc(30% - 30px);
-    line-height: 45px;
+    line-height: 20px;
 }
 
 .content .row img{
@@ -77,7 +77,7 @@ nav .wrapper{
 }
 
 .content .row .mega-links li a{
-    padding: 0 10px;
+    padding: 1px 0px;
     font-size: 12px;
     display: block;
     color: #767676;
