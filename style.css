@@ -23,7 +23,8 @@ nav .wrapper{
 
 .wrapper .nav-links{
     display: inline-flex;
-    margin-top: 10px;  
+    margin-top: 10px; 
+    flex: 1; 
 }
 
 .nav-links li{
@@ -37,7 +38,9 @@ nav .wrapper{
     color: #040404;
     font-weight: 400;
     padding: 9px 10px;
-    transition: all 0.3s ease;
+    transform: translate(-3em);
+    z-index: -1;
+    transition: all 0.3s ease 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 }
 
 .nav-links li a:hover{
@@ -58,7 +61,9 @@ nav .wrapper{
 .nav-links .Men:hover .mega-box{
     opacity: 1;
     visibility: visible;
-    transition: all 0.9s ease-out;
+    transition-delay: 0s, 0s, 0.3s;
+    z-index: 1;
+    transform: translate(0);
 }
 
 .nav-links .Women:hover .mega-box,
@@ -119,6 +124,105 @@ nav .wrapper{
     text-decoration: underline;
     border-bottom: 0px solid #000;
 }
+
+.navIcons{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+}
+
+.defultIcon a{
+    color: #000;
+    fill: #000;
+    transition: fill 0.2s ease-in-out;
+}
+
+.changeTo{
+    fill: #ccc;
+    transition: fill 0.2s ease-in-out;
+    display: none;
+}
+
+.iconwrapper:hover .defultIcon{
+    fill: #ccc;
+  display: none;
+}
+
+.iconwrapper:hover .changeTo{
+    fill: #000;
+  display: block;
+}
+
+.form-signin {
+    /* max-width: 400px; */
+    /* margin: 0 auto; */
+    position: absolute;
+    font-size: 12px;
+    right: 0;
+    width: 280px;
+    padding: 30px 20px;
+    height: fit-content;
+    /* background-color: #767676; */
+
+  }
+  .form-signin input[type="email"],
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+  }
+ 
+
+  .form-signin .checkbox {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .form-signin .forgot-password {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .form-signin .forgot-password a{
+    text-decoration: none;
+    color: #040404;
+  }
+  .form-signin .btn {
+   font-size: 12px;
+    padding: 15px;
+    width: 100%;
+    /* background-color: #08213D; */
+    box-shadow: none;
+    border-radius: 0;
+    border: 0;
+  }
+ 
+
+  .form-signin input { 
+    border-radius: none; 
+  } 
+
+  .line-with-text::before{
+    content: "";
+      display: block;
+      border-top: 1px solid #D1D1D1;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      
+  }
+
+  .line-with-text{
+    margin-top: 35px;
+  }
+
+  .line-with-text::after {
+    content: "Or";
+    display: inline-block;
+    background-color: white;
+    padding: 0 5px;
+    position: relative;
+    /* top: -10px; */
+    transform: translate(120px, -80%);
+    font-weight: bold;
+  }
 
 
 
