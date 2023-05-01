@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+nav{
+    /* background-color: red; */
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    height: 65px;
+    line-height: 40px;
+}
+
+nav .wrapper{
+    position: relative;
+    max-width: 1250px;
+    padding: 0 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .nav-links{
+    display: inline-flex;
+    margin-top: 10px;  
+}
+
+.nav-links li{
+    list-style: none;
+    line-height: 60px;
+}
+
+.nav-links li a{
+    text-decoration: None;
+    font-size: 12px;
+    color: #040404;
+    font-weight: 400;
+    padding: 9px 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover{
+  border-bottom: 1px solid #000;
+}
+
+.mega-box{
+    position: absolute;
+    top: 80px;
+    /* background: blue; */
+    width: 100%;
+    left: 0;
+}
+
+.mega-box .content{
+    padding: 25px 20px;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+}
+
+.content .row{
+    width: calc(30% - 30px);
+    line-height: 45px;
+}
+
+.content .row img{
+    width: 70%;
+    height: 55%;
+    object-fit: cover;
+}
+
+.content .row header{
+    font-size: 16px;
+    color: black;
+}
+
+.content .row .mega-links li a{
+    padding: 0 10px;
+    font-size: 12px;
+    display: block;
+    color: #767676;
+}
+
+.content .row .mega-links li a:hover{
+    text-decoration: underline;
+    border-bottom: 0px solid #000;
+}
+
+
