@@ -209,6 +209,29 @@ nav .wrapper{
       
   }
 
+  .socialmediabtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+  }
+
+
+  .socialmediabtn .btnwrapper button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border: 1px solid #041E3A;
+    padding: 5px 4px;
+    width: 120px;
+  }
+
+  .socialmediabtn .btnwrapper button:hover{
+    background-color: #041E3A;
+    color: #fff;
+  }
+
   .line-with-text{
     margin-top: 35px;
   }
