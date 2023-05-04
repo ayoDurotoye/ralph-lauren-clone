@@ -474,8 +474,14 @@ main{
     margin: 0 auto;
 }
 
+
+/* second nav bar */
+
+
 .navBarSticky{
     width: 100%;
+    position: sticky;
+    top: 65px;
  
 }
 
@@ -543,5 +549,13 @@ main{
     font-size: 13px;
     font-weight: 500;
     text-transform: uppercase;
+}
+
+.variousSize{
+    display: flex;
+}
+
+.variousSize-2{
+    display: flex;
 }
 
