@@ -683,6 +683,38 @@ display: block;
  
 /* end of card */
 
+.viewMore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.viewMore p{
+    color: #6d6f73;
+    font-size: 13px;
+}
+
+.viewMore a{
+    color: #000;
+    font-size: 13px;
+}
+
+.viewMore button{
+    outline: none;
+    background-color: transparent;
+    width: 230px;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.viewMore button:hover{
+    background-color: #041e3a;
+    color: #fff;
+}
  
   
 
