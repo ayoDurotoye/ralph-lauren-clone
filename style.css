@@ -584,6 +584,11 @@ main{
     align-items: center;
 }
 
+.container h2{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
 .container .row{
     gap: 0px;
 }
@@ -655,7 +660,7 @@ display: block;
     text-decoration: underline;
   }
 
-  .card-body .ccard-text .two{
+  .card-body .card-text .two{
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
@@ -672,6 +677,8 @@ display: block;
 
   .card-body .card-Price{
     color:  #9f6c36;
+    font-size: 12px;
+    font-weight: 400;
   }
  
 /* end of card */
