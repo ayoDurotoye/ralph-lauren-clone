@@ -6,6 +6,7 @@
 }
 nav{
     /* background-color: red; */
+    position: static;
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -435,12 +436,12 @@ nav .wrapper{
 .heroPage{
     background: blueviolet;
     background-image: url(./images/hero\ page\ bckgrnd.webp);
-    /* object-fit: cover; */
+    object-fit: cover;
     background-size: cover;
     width: 100%;
     background-position: center;
     height: 80vh;
-    position: sticky;
+    /* position: sticky; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -481,7 +482,7 @@ main{
 .navBarSticky{
     width: 100%;
     position: sticky;
-    top: 65px;
+    top: 0;
  
 }
 
@@ -558,4 +559,126 @@ main{
 .variousSize-2{
     display: flex;
 }
+
+/* start of card design */
+
+
+.image-wrapper{
+    width: fit-content;
+    height: fit-content;
+}
+
+.secondImageWithIcon span{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #fbfbfb;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    display: block;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .row{
+    gap: 0px;
+}
+
+.container .row .card{
+    border-radius: 0;
+    border: none;
+
+}
+
+.container .image-wrapper{
+    position: relative;
+  display: inline-block;
+}
+
+.container .image-wrapper .first-image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .container .image-wrapper .secondImageWithIcon {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .second-image{
+display: block;
+  width: 100%;
+
+  }
+
+
+  .image-wrapper:hover  .first-image {
+    display: block;
+  }
+
+  .image-wrapper:hover .secondImageWithIcon{
+    display: block;
+    animation: image-change 4s infinite;
+  }
+
+  .card-body{
+    font-family: "Founders Grotesk text Regular", Helvetica, Arial, sans-serif;
+ 
+  }
+
+
+  .card-body .card-title{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #6d6f73;
+  }
+
+  .card-body .card-text{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #041e3a;
+    text-decoration: none;
+  }
+
+  .card-body .card-text:hover{
+    text-decoration: underline;
+  }
+
+  .card-body .ccard-text .two{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #041e3a;
+    
+  }
+
+.card-body .card-foot{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #6d6f73;
+  }
+
+  .card-body .card-Price{
+    color:  #9f6c36;
+  }
+ 
+/* end of card */
+
+ 
+  
+
+  
+  
 
