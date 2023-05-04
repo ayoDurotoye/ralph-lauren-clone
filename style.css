@@ -715,6 +715,45 @@ display: block;
     background-color: #041e3a;
     color: #fff;
 }
+
+.lastInformation{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.lastInformation h2{
+    font-size: 19px;
+    font-family: "Times New Roman", Times, serif;
+    color: #041e3a;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.lastInformation p{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #041e3a;
+    font-family: "Founders Grotesk text Regular", Helvetica, Arial, sans-serif;
+    
+
+}
+
+.lastInformation p span {
+    font-size: 14px;
+    color: #3498db;
+
+}
+
+.lastInformation p span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
  
   
 
