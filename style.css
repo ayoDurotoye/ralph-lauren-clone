@@ -768,20 +768,53 @@ display: block;
 
 .container-fluid .row {
     margin-top: 20px !important;
+   
 }
 
 .container-fluid .row .foot001{
-    margin-top: 30px;
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+    border-left:1px solid  #D1D1D1;
+    padding-left: 30px !important;
 }
 
 .container-fluid .row .foot001 h5{
     font-size: 14px;
     font-weight: 500;
     font-family: "Founders Grotesk Text Medium", Helvetica, Arial, sans-serif;
+    color: #252525;
 }
 
+.container-fluid .row .foot001 ul li a{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Founders Grotesk Text Medium", Helvetica, Arial, sans-serif;
+    color: #000000;
+    text-decoration: none;
+}
 
+.container-fluid .row .foot001 ul li a:hover{
+    text-decoration: underline;
+}
 
-  
+.search-submit input{
+    width: 200px;
+    padding: 10px;
+    outline: none;
+}
+
+.search-submit button{
+    padding: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #041E3A;
+    
+}
+
+.search-submit span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
   
 
