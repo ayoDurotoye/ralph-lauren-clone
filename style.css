@@ -754,8 +754,33 @@ display: block;
     text-decoration: underline;
     cursor: pointer;
 }
+
+.container-fluid{
+    margin: 50px 0;
+
+}
  
-  
+.container-fluid .row{
+    border-top: 1px solid #D1D1D1;
+    border-bottom: 1px solid #D1D1D1;
+    
+}
+
+.container-fluid .row {
+    margin-top: 20px !important;
+}
+
+.container-fluid .row .foot001{
+    margin-top: 30px;
+}
+
+.container-fluid .row .foot001 h5{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Founders Grotesk Text Medium", Helvetica, Arial, sans-serif;
+}
+
+
 
   
   
