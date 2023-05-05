@@ -334,17 +334,11 @@ nav .wrapper{
         flex: 1;
     }
 
-    /* .wrapper .close-btn{
-        display: block;
-    } */
-
-
     .wrapper .nav-links{
         position: static;
         height: 100vh;
         width: 100%;
         max-width: 350px;
-        /* background-color: aqua; */
         display: block;
         padding-left: 20px;
         top: 0;
