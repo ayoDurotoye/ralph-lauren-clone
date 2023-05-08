@@ -1,5 +1,5 @@
 @import './menpage.css';
-
+@import'./women.css'
 
 
 *{
@@ -515,9 +515,7 @@ main{
 
 }
 
-/* .btn .dropdown-toggle{
-    position: relative;
-} */
+
 .dropdown-menu{
     position: absolute;
     bottom: 0;

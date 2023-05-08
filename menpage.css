@@ -305,16 +305,16 @@ nav .wrapper{
 
 
 
-  @media screen and (max-width: 970px) {
+  @media screen and (max-width: 899px) {
 
     .menuSlider{
         display: block;
     }
 
     .menuSlider input{
-        /* position: absolute; */
-        /* top: 40%;
-        left: 5.5%; */
+        position: absolute;
+        top: 40%;
+        left: 5.5%;
         background-color: aqua;
         width: 10px;
         display: none;
@@ -332,6 +332,7 @@ nav .wrapper{
         justify-content: center;
         margin-left: 5%;
         flex: 1;
+        
     }
 
     .wrapper .nav-links{
@@ -376,8 +377,9 @@ nav .wrapper{
     }
     
     .searchIcon .bi-search{
-        display: block;
+        display: none;
         right: 0;
+       
        
     }
 
@@ -420,46 +422,13 @@ nav .wrapper{
     ::-webkit-scrollbar {
         width: 2px;
     }
+
+    .carousel-caption{
+        display: none;
+    }
    
-    
-    
-    
-    
-  }
+ }
 
-.heroPage{
-    background: blueviolet;
-    background-image: url(./images/hero\ page\ bckgrnd.webp);
-    object-fit: cover;
-    background-size: cover;
-    width: 100%;
-    background-position: center;
-    height: 80vh;
-    /* position: sticky; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-	justify-content: center;
-   
-   
-}
-
-.heroPage h1{
-    font-size: 44px;
-    color: #ffffff;
-    font-weight: 400;
-	margin-bottom: 10px;
-}
-
-.heroPage p{
-    font-size: 20px;
-    color: #ffffff;
-  
-}
-
-.heroPage .herocontentwrapper{
-    margin-top: 10%;
-}
 
 
 /* end of hero page */
@@ -467,9 +436,6 @@ nav .wrapper{
 main{
     max-width: 90%;
     margin: 0 auto;
-    /* position: relative; */
-    /* position: sticky; */
-    
    
 }
 
@@ -477,96 +443,573 @@ main{
 /* second nav bar */
 
 
-.nav-sticky-wrapper{
+
+/* style for men page start */
+
+
+.heroPage-men{
+    height: 80vh;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.carousel-indicators button{
+    width: 300px !important;
+    color: #fafafa !important;
+}
+
+#carouselExampleDark{
+    color: #fff !important;
+}
+
+.carousel-item{
+    height: 80vh;
+  width: 100%;
+}
+
+.carousel-item video{
+    object-fit: cover !important;
+}
+
+.carousel-item img{
+    object-fit: cover;
+    height: 80vh !important;
+    overflow: hidden;
     width: 100%;
-    /* position: relative; */
-    position: sticky;
-    position: relative;
-    /* z-index: 9999;im */
-    border: 1px solid black;
-    top: 65px;
-    background-color: #041E3A;
- 
 }
 
-.navBarStickywrapper{
-    display: flex;
-    /* background-color: #041E3A; */
-    margin-top: 10px;
+.carousel-caption .video-slide{
+    font-size: 82px;
+    font-family:  Helvetica, Arial, sans-serif;
+    font-weight: 400;
 }
 
-.navBarStickywrapper button{
-    outline: none;
+.carousel-caption h6{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.carousel-caption .video-slideB{
+    font-size: 42px;
+    font-family:  Helvetica, Arial, sans-serif;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
-.navBarStickywrapper .filterwrapper{
-    flex: 1;
+.carousel-caption span{
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+
 }
 
-.sortbywrapper{
-    display: flex;
+.carousel-caption span:hover{
+    padding-bottom: 2.5px;
+    transition: 3sec ease;
+}
+
+.carousel-caption .slider-002{
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.carousel-caption .slider-0{
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.carousel-caption .slider-00{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.carousel-caption .slider-003{
+    font-size: 52px;
+    border: 5px solid white;
+    padding: 7px;
+
+}
+
+.carousel-caption .slide3-text2{
+    justify-content: end;
     align-items: center;
-    position: relative;
-
+    display: flex;
+    width: 80%;
+   
 }
 
-/* .btn .dropdown-toggle{
-    position: relative;
-} */
-.dropdown-menu{
-    position: absolute;
-    bottom: 0;
-    height: px;
-    
-
-}
-.filtercontentMainwrapper .lineUp{
-    margin-top: 10px;
-    border-bottom: 2px solid #D1D1D1;
+.carousel-caption .slider-03{
+    font-size: 32px;
+    padding: 8px;
+    margin-top: 30px;
+    text-transform: none;
 }
 
-.filtercontentMainwrapper .variousSize .size-box{
+
+
+/* start on men's carousel */
+
+.menslider .container-fluid .row div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menslider .container-fluid .row div {
+    margin: 0 10px;
+    width: 190px;
+    height: 355px;
+}
+
+.menslider .container-fluid .row div h4{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 10px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #041e3a;
     margin-top: 25px;
 }
 
-.filtercontentMainwrapper .variousSize .size-box ul{
-    font-size: 11px;
-    list-style-type: none;
-
+.rlxpage{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/golfbackgrand.jpg);
+    background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
-.filtercontentMainwrapper .variousSize .size-box li{
-    margin-bottom: 20px; 
+.rlx-wrapper p{
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
 }
 
-.filtercontentMainwrapper .variousSize .size-box li a{
-    text-decoration: none;
-    color: black;
-}
-
-.filtercontentMainwrapper .variousSize .size-box li a:hover{
-    text-decoration: underline;
-}
-
-.filtercontentMainwrapper .variousSize .size-box h3{
-    font-size: 13px;
-    font-weight: 500;
+.rlx-wrapper span{
     text-transform: uppercase;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    color: #fff;
+
 }
 
-.variousSize{
+.rlx-wrapper span:hover{
+    padding-bottom: 2.5px;
+    transition: 3sec ease;
+}
+
+@media screen and (max-width: 899px){
+    .rlxpage{
+        width: 100%;
+        height: 100vh;
+        background-image: url(./images/RLXMOBILE.jpg);
+        background-size: cover;
+      background-position: center center;
+      /* background-repeat: no-repeat; */
+      display: flex;
+      justify-content: baseline;
+      align-items: center;
+    }
+
+    .rlx-wrapper p{
+        display: none;
+    }
+    .rlx-wrapper{
+        display: flex;
+        align-items: baseline;
+        justify-content: baseline;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .rlx-wrapper .img{
+        width: 80%;
+    }
+
+    .rlx-wrapper span{
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid white;
+        cursor: pointer;
+        color: #fff;
+    
+    }
+
+    .mensmothersday-wrapper p{
+        display: none;
+    }
+
+    .bearshop{
+        background-image: url(./images/bearMobile.jpg);
+        background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+          display: flex;
+          justify-content: baseline;
+          align-items: center;
+          width: 100%;
+          height: 100vh;
+          margin-top: 50px;
+          position: relative;
+    }
+}
+
+
+/* end of rlx for men */
+
+.mensmothersday{
+    background-image: url(./images/mothersDAY.jpg);
+    background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: baseline;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      margin-top: 50px;
+}
+
+.mensmothersday-wrapper{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    right: 10%;
+    position: absolute;
 }
 
-.variousSize-2{
+.mensmothersday-wrapper h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 52px;
+    color: #041e3a;
+
+}
+
+.mensmothersday-wrapper p{
+    font-family: Times, serif;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: Times, serif;
+    color: #041e3a;
+    margin-top: 30px;
+    width: 50%;
+    text-align: center;
+}
+
+.mensmothersday-wrapper span{
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    color: #fff;
+
+}
+
+.mensmothersday-wrapper span:hover{
+    padding-bottom: 2.5px;
+    transition: 3sec ease;
+}
+
+/* end of mother's day */
+ 
+.bearshop{
+    background-image: url(./images/bearDESKTOP.jpg);
+    background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: baseline;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      margin-top: 50px;
+      position: relative;
+}
+
+.bearshop span{
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    color: #fff;
+
+}
+
+.bearshop span:hover{
+    padding-bottom: 2.5px;
+    transition: 3sec ease;
+}
+
+.bearshop .left{
+    font-family: Times;
+    position: absolute;
+    font-size: 150px;
+    color: #fff;
+    top: 40%;
+    left: 20%;
+}
+
+.bearshop .right{
+    font-family: Times;
+    position: absolute;
+    font-size: 150px;
+    color: #fff;
+    top: 40%;
+    right: 20%;
+}
+
+.bearshop .top{
+    font-family: Times;
+    position: absolute;
+    font-size: 70px;
+    border: 8px solid snow;
+    color: #fff;
+    top: 30%;
+    left: 25%;
+    padding: 5px;
+}
+
+.bearshop p{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 24px;
+    font-weight: 100;
+    color: #fafafa;
+}
+
+.bearshop .baseline{
     display: flex;
+    align-items: center;
+    justify-content: last baseline;
+    flex-direction: column;
+    bottom: 5%;
+    left: 35%;
+    position: absolute;
+}
+
+@media screen and (max-width: 826px){
+
+    .bearshop{
+        position: relative;
+    }
+   
+
+    .bearshop .left{
+    font-family: Times;
+    position: absolute;
+    font-size: 80px;
+    color: #fff;
+    bottom: 10%;
+    left: 20%;
+    display: block;
+    }
+
+    .bearshop .right{
+        font-family: Times;
+        position: absolute;
+        font-size: 80px;
+        color: #fff;
+        top: 40%;
+        right: 20%;
+    }
+
+    .bearshop .top{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 560px){
+
+    .bearshop{
+        position: relative;
+    }
+
+    .bearshop .left{
+    font-family: Times;
+    position: absolute;
+    font-size: 40px;
+    color: #fff;
+    bottom: 10%;
+    left: 20%;
+    display: block;
+    }
+
+    .bearshop .right{
+        font-family: Times;
+        position: absolute;
+        font-size: 40px;
+        color: #fff;
+        top: 40%;
+        right: 20%;
+    }
+
+    .bearshop .top{
+        display: none;
+    }
+
+    .bearshop .baseline{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-right: 20px;
+        bottom: 5%;
+        left: 0;
+        position: absolute;
+    }
+}
+
+
+.asian-man{
+    background-image: url(./images/asianman-picture.webp);
+    background-size: cover;
+      background-position: center;
+      background-position: left;
+      background-blend-mode: darken;
+      display: flex;
+      justify-content: baseline;
+      align-items: center;
+      max-width: 100%;
+      height: 92vh;
+      margin-top: 100px;
+      position: relative;
+      
+}
+
+.asian-man-container{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    padding: 20px;
+    max-width: 100%;
+   
+}
+.row-asian-man{
+    display: flex !important;
+}
+
+.row-asian-man .content{
+    width: 50%;
+    height: 650px;
+    background-color: #FFFDFD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row-asian-man .content img{
+    width: 250px;
+    height: 24px;
+}
+
+.asian-man-img , .content{
+    width: 50%;
+    height: 90%;
+}
+
+.asian-man-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.content .firsth4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 10px;
+
+}
+
+.content .for-H2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    line-height: 42px;
+    margin-top: 20px;
+
+}
+
+.content p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; 
+    width: 55%;
+    text-align: center;
+    font-weight: 100;
+    line-height: 24px;
+}
+
+.content span{
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+    color: #000000;
+
+}
+
+.content span:hover{
+    padding-bottom: 2.5px;
+    transition: 3sec ease;
+}
+
+
+/* last section */
+
+
+.last-container span{
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+    color: #000000;
+
+}
+
+.last-container:hover{
+    padding-bottom: 2.5px;
+    transition: 3sec ease;
+}
+
+.last-container{
+    margin-top: 50px;
 }
 
 
 
-/* style for men page start */
 /* style for men page ends */
+
+
 
 .container-fluid{
     margin: 50px 0;
